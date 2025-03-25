@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- navegação -->
+  <nav>
+    <ul class="navlist">
+      <li class="active"><a href="#home">Inicio</a></li>
+      <li><a href="#about">Sobre</a></li>
+      <li><a href="#skills">Habilidades</a></li>
+      <li><a href="#projects">Projetos</a></li>
+      <li><a href="#Contact">Contatos</a></li>
+    </ul>
+    <div>
+      <ul class="social-network">
+        <li>
+          <div id="switch" onclick="toggleMode()">
+            <button></button>
+            <span></span>
+          </div>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com" target="_blank">
+            <figrure id="fig2"></figrure>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- icone do menu mobile -->
+     <div class="bx bx-menu" id="menu-icon"></div>
+   </nav>
+
+   <!-- Conteudo principal -->
+    <main>
+      <!-- secçao home -->
+      <section id="home" class="home">
+        <div class="home-presentation">
+          <p class="my-name">Meu nome é</p>
+          <h1 id="name">GIOVANNA</h1>
+          <h1 id="lat-name">DEV</h1>
+          <h3><p>Sou</p>Desenvolvedor web<span><strong></strong>Full-strack</span></h3>
+          <div class="button">
+            <a href="#projects" class="project-button">Projetos</a>
+            <a href="#contact" class="contact-button">Contato</a>
+          </div>
+        </div>
+        <img class="home-mac" src="img/principal.jpg" alt="laptop">
+      </section>
+
+      <!-- secao sobre mim -->
+       <section class="about" id="about">
+        <div class="about-img">
+          <img src="img/eu.jpg" alt="">
+        </div>
+        <div class="about-text">
+          <h2><span>SOBRE</span>MIM</h2>
+          <p>
+            Sou a giovanna, tenho 17 anos, sou de ensino médio e curso o tecnico em Desenvolvimento de Sistema, e junto com o 
+            curso tenho outros certificados em cursos.
+          </p>
+        
+        <button class="button-cv">
+          <a href="curriculo" download="CV - codeMaster Dev" class="btn-cv">Downloand CV</a>
+        </button>
+        </div>
+        <img src="img/balls.svg" alt="balls" class="balls">
+       </section>
+      
+      <!-- secao habilidades -->
+      <section class="sklls" id="skills">
+        <div class="line"></div>
+        <div class="tech">
+          <h2>TECNOLOGIAS</h2>
+          <div class="techs">
+            <div class="card">
+              <img src="img/html-icon.svg" alt="icone html">
+              <p>HTML</p>
+            </div>
+            <div class="card">
+              <img src="img/css-icon.svg" alt="icone css">
+              <p>CSS</p>
+            </div>
+            <div class="card">
+              <img src="img/js-icon.svg" alt="icone java script">
+              <p>JavaScript</p>
+            </div>
+            <div class="card">
+              <img src="img/react-js-icon.svg" alt="icone react.js">
+              <p>React.js</p>
+            </div>
+            <div class="card">
+              <img src="img/node-js-icon.svg" alt="icone node.js">
+              <p>node.js</p>
+            </div>
+            <div class="card">
+              <img src="img/python-icon.svg" alt="icone python">
+              <p>python</p>
+            </div>
+            <div class="card">
+              <img src="img/sql-icon.svg" alt="icone sql">
+              <p>sql</p>
+            </div>
+            <div class="card">
+              <img src="img/git-icon.svg" alt="icone node.js">
+              <p>Git</p>
+            </div>
+          </div>
+        </div>
+        <div class="line"></div>
+        <div class="tool">
+          <h2>FERRAMENTAS</h2>
+          <div class="tools">
+            <div class="card">
+              <img src="img/github-icon.svg" alt="icone GitHub">
+              <p>GitHub</p>
+            </div>
+            <div class="card">
+              <img src="img/vs-code-icon.svg" alt="icone vscode">
+              <p>vscode</p>
+            <div class="card">
+              <img src="img/figma-icon.svg" alt="icone figma">
+              <p>vscode</p>
+            </div>
+            <div class="card">
+              <img src="img/notion-icon.svg" alt="icone notion">
+              <p>notion</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Seção de Projetos -->
+     <section id="projects" class="projects">
+      <div class="line"></div>
+      <div class="main-text">
+        <h2>Meus <span>Projetos</span></h2>
+      </div>
+      <!-- container carrossel -->
+       <div class="carousel-container">
+        <!-- botoes de nav -->
+         <button class="carousel-button prev" aria-label="Projeto anterior">&#10094;</button>
+         <button class="carousel-button next" aria-label="Próximo projeto ">&#10095;</button>
+         <!-- slides carrosel -->
+          <div class="carousel-slides">
+            <!-- slide 1 - login -->
+             <div class="carousel-slide active">
+              <div class="row">
+                <img src="img/login-land-rover.png" alt="print pagina de login">
+                <div class="layer">
+                  <h5>Tela de login</h5>
+                  <p>Esse repositório e uma atualização/melhoria do repositório anterior "formulario-login".Nele utilizo apenas HTML e CSS.</p>
+                </div>
+              </div>
+             </div>
+             <!-- slides 2 -cronometro -->
+              <div class="carousel-slide">
+                <div class="row">
+              <img src="img/cronometro.png" alt="print-cronometro">
+              <div class="layer">
+                <h5>Relógio Digital</h5>
+                <p>Desenvolvido um relogio digital utilizando HTML, CSS e JS.</p>
+              </div>
+             </div>
+            </div>
+             <!-- slides 3- formulario -->
+              <div class="carousel-slide">
+                <div class="row">
+                  <img src="img/form.png" alt="pagina de form">
+                  <div class="layer">
+                    <h5>Formulario de avaliação</h5>
+                    <p>Desenvolvimento formulário de avaliação da mentoria</p>
+                  </div>
+                </div>
+              </div>
+          </div>
+       </div>
+     </section>
+   
+    <!-- Seção de Contato -->
+
+    <section class="contact" id="contact">
+      <div class="contact-text">
+        <div class="main-text">
+          <h2>Entre em <span>contato</span></h2>
+        </div>
+      </div>
+      <div class="contact-form">
+        <!-- formsubmit = envia os dados para o e-mail descrito abaixo -->
+         <form action="https://formsubmit.co/laisboscolocosta@gmail.com" method="post" id="contactForm">
+          <input type="text" name="name" placeholder="digite seu nome" required>
+          <input type="email" name="email" placeholder="Digite seu e-mail">
+          <input type="hidden" name="_captcha" value="false">
+          <textarea type="text" name="text" cols="35" rows="10" placeholder="Como eu posso te ajudar?" required></textarea>
+          <br>
+          <input type="submit" value="Enviar" class="submit" required>
+         </form>
+         <!-- mensagem de agradecimento (apos enviar o formulario) -->
+          <div id="thankYouMessage" class="thank-you-message">
+            Obrigada! Aguarde o retorno!
+          </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Rodapé -->
+  <section class="end">
+    <div class="last-text">
+      <p>by Laís Boscolo <img src="img/bussola.svg" alt="">Alguns direitos reservados.</p>
+    </div>
+
+    <div class="top">
+      <!-- seta adicionada do serviço box-icons -->
+       <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
+    </div>
+
+  </section>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
